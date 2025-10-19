@@ -34,9 +34,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
   if(metaEl) metaEl.textContent = 'DOB: 10/11/2005 • University: Parul University'
   document.getElementById('aboutText').textContent = data.about
   document.getElementById('emailLink').href = `mailto:${data.email}`
-  // also update contact section visible email text
-  const contactAnchor = document.getElementById('emailLink')
-  if(contactAnchor) contactAnchor.textContent = data.email
 
   // Group skills into categories
   const frontend = ['HTML5','CSS3','JavaScript (ES6+)','TypeScript','React.js','Next.js']
